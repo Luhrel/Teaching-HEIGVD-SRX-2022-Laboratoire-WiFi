@@ -46,20 +46,32 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 > 
 > **_Réponse :_** 
 
+`wlan.fc.type_subtype == 4` et `wlan.ssid matches "hotel"`, puis `wlan.sa == fc:f1:36:22:49:74` pour confirmer que la cible s'est connectée à l'Hôtel Black Rain et au Starbucks.
+
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
 > 
 > **_Réponse :_** 
+
+`fc:f1:36:22:49:74`.
 
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
 > 
 > **_Réponse :_** 
 
+Samsung.
+
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
 > 
 > **_Réponse :_** 
+
+Avec le filtre `wlan.sa == fc:f1:36:22:49:74`, on peut voir tous les Wifi auxquels la cible s'est connectée.
+On peut voir que la cible s'est connectés aux Wifi suivants :
+![capture](captures/q4.png)
+
+La cible s'est donc probablement rendue à la Migros, à un aéroport "GVA" (sûrement Genève), et à une boulangerie "Fleur de pain".
 
 ---
 
