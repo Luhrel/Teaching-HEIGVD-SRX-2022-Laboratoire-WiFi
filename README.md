@@ -119,15 +119,22 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 > 
 > **_Réponse :_** 
 
+C'était instantané.
+
 ---
 > **_Montrer une capture d'écran de l'obtention de la clé WEP_**
 > 
 > **_Capture ici_** 
 
+![Crack WEP](captures/crack_wep.png)
+
 ---
 > **_Question :_** Arrivez-vous à récupérer les informations d’identification (credentials) de l’authentification basique http contenue dans la capture ?
 > 
 > **_Réponse :_** 
+
+Oui, on peut voir les identifiants dans l'en-tête HTTP :
+![Crack WEP](captures/credentials_http.png)
 
 ---
 
@@ -156,6 +163,10 @@ Nous utiliserons Wireshark pour trouver l’authentification WPA contenue dans l
 > 
 > **_Capture ici_** 
 
+![Nonce 1](captures/nonce1.png)
+
+![Nonce 2](captures/nonce2.png)
+
 ---
 
 
@@ -178,13 +189,19 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 > 
 > **_Réponse :_** 
 
+Environ 2 secondes.
+
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 > 
 > **_Capture ici_** 
 
+![WPA key](captures/wpa_key.png)
+
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
+
+Non.
 
 > 
 > **_Réponse :_** 
